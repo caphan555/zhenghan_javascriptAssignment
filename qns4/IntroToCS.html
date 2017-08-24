@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title> Introduction To Computer Science</title>
+	<style>
+
+		body{
+			background-color: rosybrown;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		hr {
+			border-color: lightgrey;
+			background-color: lightgrey;
+			color: lightgrey;
+			
+		}
+		
+		footer {
+			position: relative;
+			height: 40px;
+			width: 100%;
+			background-color: #333333;
+		}
+
+		.copyright {
+			position: absolute;
+			width: 100%;
+			color: #fff;
+			line-height: 40px;
+			font-size: 0.7em;
+			text-align: center;
+			bottom: 0;
+		}
+
+		.welcomeMsg {
+			text-align: center;
+		}
+
+		.comments{
+			float: right;
+		}
+
+		td{
+			width: 33%;
+			text-align: center;
+		}
+
+	</style>
+</head>
+	
+<body>
+
+	<h1>Introduction to Computer Science</h1>
+	<br>
+	<br>
+
+	<div>
+		<p>CSC 205 Spring 2006 at <a href="BereaCollegeWebpage.html"> Berea College</a></p>
+		<p>Instructor: <a href="JanPearceWebPage.html"> Jan Pearce</a>
+		<p>Teaching Assistant: Jonathan Hunt </p>
+	</div>
+
+	<div id="welcomeMsg">
+		<p>Welcome to the home page for Introduction to Computer Science</p><br>
+		<p>Where you will find information and resources for our class!</p>
+	</div>
+
+	<div>
+		<p>Any suggestions or comments from students or others browsing this site will be welcomed.</p>
+	</div>
+
+	<div>
+		<p>Contact Instructor: <a href="mailto:pearcej@berea.edu">pearcej@berea.edu</a></p>
+	</div>
+	<hr>
+
+	<div>
+		<p>One of the goals of this class is to construct homepages by learning HTML.</p>
+		<a href="studentHomePage.html">To visit the student home pages...</a>
+	</div>
+	<hr>
+
+	<div>
+		<table border="1" align="center" width="100%">
+
+			<thead></thead>
+
+			<tfoot></tfoot>
+
+			<tbody>
+				<tr>
+					<td ><a id="mainPage"></a></td>
+					<td ><a id="syllabus"></a></td>
+					<td ><a id="homePage"></a></td>
+				</tr>
+				<tr>
+					<td ><a id="assignments"></a></td>
+					<td ><a id="blackBoard"></a></td>
+					<td ><a id="comHistory"></a></td>
+				</tr>
+				<tr>
+					<td ><a id="dictionaries"></a></td>
+					<td ><a id="htmlResources"></a></td>
+					<td ><a id="jsResources"></a></td>
+				</tr>
+			</tbody>
+
+		</table>
+		<hr>
+
+		<div>
+			<p>http://www.berea.edu/faculty/pearcej/CSC205/ <span style="float:right;">Comments: <a href="mailto:jan_pearce@berea.edu">jan_pearce@berea.edu</a> </span></p>
+			
+		</div>
+	</div>
+
+	
+
+</body>
+
+<footer>
+	<p class="copyright">Created By: Ho Zheng Han, August 2017</p>
+
+	<script>
+		var x = document.getElementById("mainPage");
+		x.innerHTML="Main CSC 205 Page";
+		x.href="mainCSC205Page.html";
+
+		var i = document.getElementById("syllabus");
+		i.innerHTML = "CSC205 Syllabus";
+		i.href="CSC205Syllabus.html";
+
+		var t = document.getElementById("homePage");
+		t.innerHTML = "Berea Math CS Home Page";
+		t.href="bereaMathCSHomePage.html";
+
+		var r = document.getElementById("blackBoard");
+		r.innerHTML = "Blackboard";
+		r.href="blackboard.html";
+
+		var k = document.getElementById("assignments");
+		k.innerHTML = "CSC205 Assignments";
+		k.href="CSC205Assignments.html";
+
+		var e = document.getElementById("comHistory");
+		e.innerHTML = "Computer History";
+		e.href="computerHistory.html";
+
+		var h = document.getElementById("dictionaries");
+		h.innerHTML = "Online Dictionaries";
+		h.href="onlineDictionaries.html";
+
+		var d = document.getElementById("htmlResources");
+		d.innerHTML = "HTML Resources";
+		d.href="htmlResources.html";
+
+		var p = document.getElementById("jsResources");
+		p.innerHTML = "JavaScript Resources";
+		p.href="javascriptResources.html";
+	</script>
+</footer>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title> My Favorites</title>
+	<style>
+
+		body{
+			background-color: lime;
+		}
+
+		h1 {
+			text-align: center;
+			color: red;
+		}
+
+		hr {
+			border-color: red;
+			background-color: red;
+			color: red;
+			width: 400px;
+		}
+		
+		footer {
+			position: relative;
+			height: 40px;
+			width: 100%;
+			background-color: #333333;
+		}
+
+		.copyright {
+			position: absolute;
+			width: 100%;
+			color: #fff;
+			line-height: 40px;
+			font-size: 0.7em;
+			text-align: center;
+			bottom: 0;
+		}
+
+	</style>
+</head>
+	
+<body>
+
+	<h1>Ho Zheng Han Favorite... </h1>
+	<hr>
+
+	<table border="1" bgcolor="800080">
+
+		<caption> Movies</caption>
+		<thead>
+			<tr>
+				<th > Title</th>
+				<th >Summary</th>
+				<th >Rating</th>
+			</tr>
+		</thead>
+
+		<tfoot></tfoot>
+
+		<tbody>
+			<tr>
+				<td >Cast Away</td>
+				<td >Tom Hanks gets stranded on an island after a plane crash for 5 years and returns to the States discovering that everyone in his life has moved on.</td>
+				<td >5 stars</td>
+			</tr>
+			<tr>
+				<td >Digimon Movie 2: Our War Game</td>
+				<td >An evil digimon latches onto the internet trying to activate the nuclear codes to destroy humanity</td>
+				<td >4 stars</td>
+			</tr>
+			<tr>
+				<td >Toys Story</td>
+				<td >Toys come alive in the night and show their decreasing significance in a child's life as the child grows up.</td>
+				<td >3 stars</td>
+			</tr>
+		</tbody>
+
+	</table>
+	
+	<br>
+	<br>
+	<table border="1" bgcolor="7B68EE" align="center">
+
+		<caption> Songs</caption>
+		<thead>
+			<tr bgcolor="DDA0DD">
+				<th > Title</th>
+				<th >Artist</th>
+				<th >Album</th>
+				<th >Link to Lyrics</th>
+			</tr>
+		</thead>
+
+		<tfoot></tfoot>
+
+		<tbody>
+			<tr >
+				<td >Shape Of My Heart</td>
+				<td >Backstreet Boys</td>
+				<td >Black & Blue</td>
+				<td><a href="https://www.azlyrics.com/lyrics/backstreetboys/shapeofmyheart.html">Shape Of My Heart Lyrics</td>
+			</tr>
+			<tr>
+				<td >Lucky</td>
+				<td >Britney Spears</td>
+				<td >Oops!... I Did It Again</td>
+				<td><a href="https://www.azlyrics.com/lyrics/britneyspears/lucky.html">Lucky Lyrics</td>
+			</tr>
+			<tr>
+				<td >Livin' On A Prayer</td>
+				<td >Bon Jovi</td>
+				<td >Slippery When Wet</td>
+				<td><a href="https://www.azlyrics.com/lyrics/bonjovi/livinonaprayer.html">Livin' On A Prayer Lyrics</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+	<br>
+	<br>
+	<table border="8" bgcolor="FA8072" align="center" color="FF0000">
+
+		<caption> Food</caption>
+		<thead>
+			<tr bgcolor="2E8B57">
+				<th id="titleHead"></th>
+				<th id="desHead"></th>
+				<th id="picHead"></th>
+				
+			</tr>
+		</thead>
+
+		<tfoot></tfoot>
+
+		<tbody>
+			<tr >
+				<td id="zinger"><font color="0000CD">Zinger Double Down Burger</font></td>
+				<td id="zingerDes"></td>
+				<td ><font color="0000CD"><img src="D:\html assignment\tablefavorites\images\Koala.jpg" alt="Zinger Double Down" height="93" width="125"/></font></td>
+			</tr>
+			<tr >
+				<td id="McChicken"></td>
+				<td id="McChickenDes"></td>
+				<td ><font color="0000CD"><img src="D:\html assignment\tablefavorites\images\Lighthouse.jpg" alt="Black Pepper Mayo McChicken" height="93" width="125"/></font></td>
+			</tr>
+			<tr>
+				<td id="meltz"></td>
+				<td id="meltzDes"></td>
+				<td ><font color="0000CD"><img src="D:\html assignment\tablefavorites\images\Penguins.jpg" alt="Meltz" height="93" width="125" /></font></td>
+			</tr>
+		</tbody>
+
+	</table>
+
+	<br>
+
+</body>
+
+<footer>
+	<p class="copyright">Created By: Ho Zheng Han, September 2012</p>
+
+	<script>
+		var x = document.getElementById("meltz");
+		x.innerHTML="Meltz";
+		x.style.color='Blue';
+
+		var i = document.getElementById("meltzDes");
+		i.innerHTML = "Toasted wrap with chicken cubes, diced tomatoes and cheddar cheese.";
+		i.style.color='Blue';
+
+		var t = document.getElementById("McChicken");
+		t.innerHTML = "Black Pepper Mayo McChicken Burger";
+		t.style.color='Blue';
+
+		var r = document.getElementById("McChickenDes");
+		r.innerHTML = "A McChicken Burger with a fried egg and black pepper mayonnaise";
+		r.style.color='Blue';
+
+		var k = document.getElementById("zinger");
+		k.innerHTML = "Zinger Double Down Burger";
+		k.style.color='Blue';
+
+		var e = document.getElementById("zingerDes");
+		e.innerHTML = "Two meat patties serve as the "+"bread"+" of this burger, with 3 strips of bacon in between.";
+		e.style.color='Blue';
+
+		var h = document.getElementById("titleHead");
+		h.innerHTML = "Title";
+		h.style.color='Blue';
+
+		var d = document.getElementById("desHead");
+		d.innerHTML = "Description";
+		d.style.color='Blue';
+
+		var p = document.getElementById("picHead");
+		p.innerHTML = "Picture";
+		p.style.color='Blue';
+	</script>
+</footer>
+</html>
